@@ -29,7 +29,7 @@ const EventoSchema = Schema({
 EventoSchema.method( 'toJSON', function() {
     
     const { _id, __v, ...object } = this.toObject();
-
+    
     object.id = _id;
     return object;
 });
